@@ -5,17 +5,24 @@
     height: 50px;
     padding: 0.5rem 4rem;
     right: 0;
-    bottom: 0;
+    bottom: 40px;
     text-align: center;
     position: fixed;
     margin-bottom: 2rem;
 }
 
 footer{
-    background-color: aqua;
+    background-color: rgba(51,54,71,255);
     width: 100%;
-    position: absolute;
     display: flex;
     justify-content: center;
     bottom: 0;
+}
+
+.centrarFlexboxRow {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: row; 
 }

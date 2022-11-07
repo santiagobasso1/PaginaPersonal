@@ -1,17 +1,18 @@
-:root {
-    --body-bg-color: #1a1c1d;
-    --text-color: #aaaebc;
-    --hr-color: #26292a;
-    --red: #e74c3c;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header{
+  background-color: rgba(51,54,71,255);
+}
+
+
   
   ul {
     list-style: none;
+    margin: 0;
   }
   
   a {
@@ -20,42 +21,41 @@
   }
   
   body {
-    margin: 30px 0;
     font: 22px sans-serif;
     background: var(--body-bg-color);
     color: var(--text-color);
   }
   
-  .contenedorMenu {
+  .contenedormenuNavegación {
     border-color: var(--hr-color);
     margin: 20px 0;
   }
   
-  .menu {
+  .menuNavegación {
     display: flex;
     justify-content: center;
   }
   
-  .menu li {
+  .menuNavegación li {
     margin-right: 70px;
   }
   
-  .menu a {
+  .menuNavegación a {
     position: relative;
     display: block;
     overflow: hidden;
   }
   
-  .menu a span {
+  .menuNavegación a span {
     transition: transform 0.2s ease-out;
   }
   
-  .menu a span:first-child {
+  .menuNavegación a span:first-child {
     display: inline-block;
     padding: 10px;
   }
   
-  .menu a span:last-child {
+  .menuNavegación a span:last-child {
     position: absolute;
     top: 0;
     right: 0;
@@ -67,54 +67,42 @@
     transform: translateY(-100%);
   }
   
-  .menu i {
+  .menuNavegación i {
     font-size: 30px;
   }
   
-  .menu a:hover span:first-child {
+  .menuNavegación a:hover span:first-child {
     transform: translateY(100%);
   }
   
-  .menu a:hover span:last-child,
-  .menu[data-animation] a:hover span:last-child {
+  .menuNavegación a:hover span:last-child,
+  .menuNavegación[data-animation] a:hover span:last-child {
     transform: none;
   }
   
   /* ANIMATIONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .menu[data-animation="to-top"] a span:last-child {
+  .menuNavegación[data-animation="to-top"] a span:last-child {
     transform: translateY(100%);
   }
   
-  .menu[data-animation="to-top"] a:hover span:first-child {
+  .menuNavegación[data-animation="to-top"] a:hover span:first-child {
     transform: translateY(-100%);
   }
   
-  .menu[data-animation="to-right"] a span:last-child {
+  .menuNavegación[data-animation="to-right"] a span:last-child {
     transform: translateX(-100%);
   }
   
-  .menu[data-animation="to-right"] a:hover span:first-child {
+  .menuNavegación[data-animation="to-right"] a:hover span:first-child {
     transform: translateX(100%);
   }
   
-  .menu[data-animation="to-left"] a span:last-child {
+  .menuNavegación[data-animation="to-left"] a span:last-child {
     transform: translateX(100%);
   }
   
-  .menu[data-animation="to-left"] a:hover span:first-child {
+  .menuNavegación[data-animation="to-left"] a:hover span:first-child {
     transform: translateX(-100%);
   }
   
-  /* FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .page-footer {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 1rem;
-  }
-  
-  .page-footer span {
-    color: var(--red);
-  }

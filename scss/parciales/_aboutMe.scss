@@ -1,0 +1,36 @@
+.tamanioImagenAboutMe{
+    height: 350px;
+    width: 300px;
+}
+
+.imagenAbourMe{
+    display: flex;
+    justify-content: center;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardAboutMe{
+    background-color: rgba(40,42,57,255);
+    border: none;
+    padding: 5rem;
+    text-align: center;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+
+.tamanioTitulos{
+    height: 630px;
+    width: 810px;
+}
